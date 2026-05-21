@@ -276,6 +276,77 @@ footer {
 }
 
 
+/* CONTACT FORM STYLING */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 12px;
+    margin-top: 30px;
+}
 
+.contact-form label {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2b2b2b;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Didot', serif;
+    background: #fafafa;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 12px;
+    background: #b89b72;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #a88a63;
+}
+
+
+/* CONTACT PAGE TWO-COLUMN LAYOUT */
+.contact-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 40px;
+}
+
+/* Left side */
+.contact-info {
+    flex: 1;
+}
+
+/* Right side (form) */
+.contact-form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* pushes form to the right */
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 350px; /* keeps form neat on the right */
+}
 
 
